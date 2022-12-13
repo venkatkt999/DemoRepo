@@ -15,3 +15,7 @@ WebDriverWait(driver,10).until(EC.presence_of_element_located((By.NAME,"firstnam
 driver.find_element(By.NAME,"lastname").send_keys("Kanna")
 driver.find_element(By.NAME,"reg_email__").send_keys("rajesh@gmail.com")
 
+def add(a,b):
+  c=a+b
+  print c
+
