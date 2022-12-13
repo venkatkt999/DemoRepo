@@ -13,4 +13,5 @@ driver.maximize_window()
 driver.find_element(By.XPATH,"//a[contains(@id,'u_0_0_')]").click()
 WebDriverWait(driver,10).until(EC.presence_of_element_located((By.NAME,"firstname"))).send_keys("Rajesh")
 driver.find_element(By.NAME,"lastname").send_keys("Kanna")
+driver.find_element(By.NAME,"reg_email__").send_keys("rajesh@gmail.com")
 
