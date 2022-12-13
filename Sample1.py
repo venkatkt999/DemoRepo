@@ -9,5 +9,8 @@ s=Service(executable_path="C:\\Selenium Web Drivers\\chromedriver_win32\\chromed
 driver=webdriver.Chrome(service=s)
 driver.get("http://www.fb.com")
 driver.maximize_window()
-driver.implicitly_wait(30)
+
 driver.find_element(By.XPATH,"//a[contains(@id,'u_0_0_')]").click()
+WebDriverWait(driver,10).until(EC.presence_of_element_located((By.NAME,"firstname"))).send_keys("Rajesh")
+driver.find_element(By.NAME,"lastname").send_keys("Kanna")
+
